@@ -10,7 +10,7 @@ h2{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: purple;
     
-} */
+}
 #home{
     background-color: red;
 }
@@ -19,4 +19,45 @@ h2{
     background-color: black;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+} 
+
+div p{
+    background-color: brown;
+    color: white;
+} */
+
+div~p{
+    background-color: brown;
+    color: white;
+}
+
+/* p:hover{
+    background-color: aqua;
+    font-size: xx-large;
+} */
+
+p::after{
+    content: "ABES ENGINEERING COLLEGE";
+    background-color: rgb(158, 148, 183);
+}
+
+p::before{
+    content: "We are the student of CS-b";
+    background-color: brown;
+    color: white;
+}
+
+p::selection{
+    background-color: green;
+    color: black;
+}
+
+p:nth-child(3){
+    background-color: black;
+    color: white;
+}
+
+div p:nth-of-type(1){
+    background-color: aqua;
+    font-size: xx-small;
 }
