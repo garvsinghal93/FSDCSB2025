@@ -1,8 +1,8 @@
 .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px 200px 200px 200px;
-    background-color: crimson;
+    grid-template-rows: 100px 70px 400px 200px;
+    background-color: white;
     border: 1px solid black;
 }
 
@@ -11,9 +11,30 @@
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: black;
     border: 1px solid white;
     color: aqua;
+}
+.subheader{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #232F3E;
+    border: white;
+    color: white;
+    padding-top: 0px ;
+}
+
+.child1grid{
+    display: flex;
+    flex-direction: column;
 }
 
 .child1{
@@ -25,6 +46,8 @@
 }
 .child11{
     background-color: green;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg);
+    background-size: cover;
     height: 100px;
     width: 100px;
     margin-top: 10px;
@@ -32,18 +55,153 @@
 }
 .child12{
     background-color: greenyellow;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg);
+    background-size: cover;
     height: 100px;
     width: 100px;
     margin-top: 10px;
 }
 .child13{
     background-color: brown;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg);
+    background-size: cover;
     height: 100px;
     width: 100px;
     margin-left: 20px;
 }
 .child14{
     background-color: chartreuse;   
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.child2grid{
+    display: flex;
+    flex-direction: column;
+}
+.child2{
+    background: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.child21{
+    background-color: green;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.child22{
+    background-color: greenyellow;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.child23{
+    background-color: brown;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.child24{
+    background-color: chartreuse;   
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.child3grid{
+    display: flex;
+    flex-direction: column;
+}
+.child3{
+    background: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.child31{
+    background-color: green;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.child32{
+    background-color: greenyellow;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult._SY232_CB553870684_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.child33{
+    background-color: brown;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.child34{
+    background-color: chartreuse;   
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_1._SY232_CB570220221_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+}
+.child4grid{
+    display: flex;
+    flex-direction: column;
+}
+.child4{
+    background: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.child41{
+    background-color: green;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Cleaning_wipes_hi-res_v3._SY232_CB549134196_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.child42{
+    background-color: greenyellow;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Shower_head__hi-res_v3._SY232_CB549134196_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+.child43{
+    background-color: brown;
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools__hi-res_v3._SY232_CB549134196_.jpg);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.child44{
+    background-color: chartreuse;   
+    background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers__hi-res_v3._SY232_CB549134196_.jpg);
+    background-size: cover;
     height: 100px;
     width: 100px;
 }
@@ -58,4 +216,14 @@
 .child4{
     background: white;
     border: 1px solid black;
+}
+
+.footer{
+    background-color: #232F3E;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: white;
+    border: 1px solid white;
 }
