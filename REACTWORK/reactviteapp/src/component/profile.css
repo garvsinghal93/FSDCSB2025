@@ -1,0 +1,8 @@
+.parent{
+    border: 2px solid black;
+    width: 300px;
+    height: 800px;
+    background-color: aqua;
+    color: black;
+    justify-items: center;
+}
