@@ -1,20 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Profile from './component/Profile'
-import Gallery from './component/Gallery'
-import StateHandling from './component/StateHandling'
+import ImageManipulation from './component/ImageManipulation'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from '../pages/Login'
+import Registration from '../pages/Registration'
+import Dashboard from '../pages/Dashboard'
+import MainLayout from '../pages/MainLayout'
 
 function App() {
+  const [data, setData] = useState({});
 
   return (
-    <div className='container'>
-      <h2>Welcome to react vite</h2>
-      {/* <Gallery/> */}
-      <h3>
-        <StateHandling />
-      </h3>
+    <div>
+     {/* <ImageManipulation/> */}
+
+     <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainLayout/>}/>
+        <Route path='/login' element={<Login logData={data}/>}></Route>
+        <Route path='/registration' element={<Registration regData={setData} />}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
+     </BrowserRouter>
+
+     <h2>
+      {JSON.stringify(data)}
+     </h2>
     </div>
   )
 }
